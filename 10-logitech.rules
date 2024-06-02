@@ -1,0 +1,8 @@
+KERNAL="input*"
+SUBSYSTEMS=="input", \
+ATTRS{idVendor}==&quot;06a3&quot;
+ATTRS{idProduct}==&quot;0d05&quot;
+DRIVER=="evdev"
+ENV{ID_INPUT}="1"
+ENV{ID_INPUT_JOYSTICK}="1"
+NAME="input/%k", MODE="0666", SYMLINK="input/logitech/radiopanel";
